@@ -119,6 +119,7 @@ packages/
 *project.lock.json
 .vs
 .vscode
+__tests__
 
 #JavaScript files
 *.jsbundle
