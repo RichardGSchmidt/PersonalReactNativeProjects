@@ -43,15 +43,28 @@ const styles = StyleSheet.create({
 })
 
 export default class CounterComponent extends Component{
+    constructor(props){
+        super(props);
+
+        this.state = {value:0}
+    }
+    onIncrement()
+    {
+        this.setState({
+            value : this.state.value + 1,
+        });
+    }
     render(){
         return(
             <View style = {styles.container}>
             <ToolbarAndroid style={styles.toolbar}
                 title="Richard's Learning Application" />
-                <Text>Counter</Text>
-                <TouchableHighlight style={styles.button}>
+                <Text style={styles.text}>{this.state.value}</Text>
+                <TouchableHighlight 
+                    style={styles.button}
+                    onPress={this.onIncrement.bind(this)}>
                     <Text style = {styles.buttonText}>
-                        Increment
+                        ADD
                     </Text>
                 </TouchableHighlight>
             </View>
