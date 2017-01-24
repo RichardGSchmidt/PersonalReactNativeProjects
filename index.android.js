@@ -1,7 +1,5 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
+ * React Native App I'm making to learn the language
  */
 
 import React, { Component } from 'react';
@@ -12,21 +10,12 @@ import {
   View
 } from 'react-native';
 
+import Counter from './CounterComponent'
+
 export default class ReactProject1 extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
+      <Counter />
     );
   }
 }
@@ -36,7 +25,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#25FCFF',
   },
   welcome: {
     fontSize: 20,
