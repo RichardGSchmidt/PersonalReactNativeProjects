@@ -117,6 +117,8 @@ packages/
 .vs/
 .vscode/
 *project.lock.json
+.vs
+.vscode
 
 #JavaScript files
 *.jsbundle
